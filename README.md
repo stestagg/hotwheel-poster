@@ -8,15 +8,23 @@ This repo includes `extract_poster_groups.py`, a script that:
 4. Computes 3×4 crop bounds from anchor positions.
 5. Exports 12 cropped PDFs into an output folder.
 
-### Install
+### Requirements
+
+- `uv` installed: https://docs.astral.sh/uv/
+
+### Run (uv)
+
+```bash
+uv run extract_poster_groups.py posters/HW_Poster_WAVE_1_2024_HiRes-1.pdf \
+  --output-dir output/group_pdfs
+```
+
+`uv` reads dependencies directly from `extract_poster_groups.py` and creates an isolated environment automatically.
+
+### Optional (pip)
 
 ```bash
 python -m pip install -r requirements.txt
-```
-
-### Run
-
-```bash
 python extract_poster_groups.py posters/HW_Poster_WAVE_1_2024_HiRes-1.pdf \
   --output-dir output/group_pdfs
 ```

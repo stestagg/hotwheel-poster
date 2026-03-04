@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#   "PyMuPDF>=1.24.0",
+# ]
+# ///
+
 """Extract grouped collection panels from a layered Hot Wheels poster PDF.
 
 Workflow:
